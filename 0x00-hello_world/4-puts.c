@@ -3,7 +3,7 @@
 /**
  * main - This function main prints the string provided to it
  *
- * Return: 1 if the number is positive. 0 otherwise
+ * Return: 0
  */
 int main(void)
 {
