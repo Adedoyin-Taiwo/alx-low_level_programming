@@ -2,8 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main - this function determines if the number supplied is negative or poritive
- * Return- 0, if the function works effectively
+/**
+ * main - this function determines if a number supplied is negative or positive
+ * Return: 0, if the function works effectively
  */
 int main(void)
 {
@@ -15,9 +16,12 @@ int main(void)
 	if (n < 0)
 	{
 		printf("%d is negative\n", n);
-	} else if (n == 0)
-	{	printf ("%d is zero\n", n);
-	} else {
+	}
+	else if (n == 0)
+	{	printf("%d is zero\n", n);
+	}
+	else
+	{
 		printf("%d is positive\n", n);
 	}
 	return (0);
