@@ -13,7 +13,7 @@ int main(void)
 	while (d <= 56)
 	{
 		putchar(d);
-		for (int i = 0; i < sizeof(dcomaspace) / sizeof(dcomaspace[0]); i++)
+		for (i = 0; i < sizeof(dcomaspace) / sizeof(dcomaspace[0]); i++)
 		{
 			putchar(dcomaspace[i]);
 		}
