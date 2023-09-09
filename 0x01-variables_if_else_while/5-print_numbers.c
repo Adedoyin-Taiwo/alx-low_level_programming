@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+* main - the function prints digits in base 10
+* Return: 0
+*/
 int main(void)
 {
 	int d = 0;
