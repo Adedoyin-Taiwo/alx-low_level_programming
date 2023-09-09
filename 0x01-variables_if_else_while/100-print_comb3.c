@@ -11,7 +11,6 @@ int main(void)
 	unsigned long int c;
 	int dcomaspace [] = {44, 32};
 	int ddig [2] = {0};
-	int isFirstPair = 1;
 
 	for (i = 48; i <= 57; i++)
 	{
