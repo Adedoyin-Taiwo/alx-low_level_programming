@@ -8,7 +8,7 @@ int main(void)
 {
 	int d = 48;
 	int dcomaspace [] = {44, 32};
-	int i;
+	unsigned long int i;
 
 	while (d <= 56)
 	{
