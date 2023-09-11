@@ -6,45 +6,29 @@
 */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
-	int ddig [4] = {0};
-	int c;
+	int digi1, digi2;
 	int dcomaspace[] = {44, 32};
 	int z;
 
-	for (i = 48; i <= 57; i++)
+	for (digi1 = 0; digi1 <= 99; digi1++)
 	{
-		for (j = 48; j < 57; j++)
+		for (digi2 = digi1 + 1; digi2 <= 99; digi2++)
 		{
-			for (k = 48; k <= 57; k++)
+			putchar((digi1 / 10) + '0');
+			putchar((digi1 % 10) + '0');
+			putchar(' ');
+			putchar((digi2 / 10) + '0');
+			putchar((digi2 % 10) + '0');
+			if (digi1 < 98 || digi2 < 99)
 			{
-				for (l = j; l <= 57; l++)
-				{
-					ddig[0] = i;
-					ddig[1] = j;
-					ddig[2] = k;
-					ddig[3] = l;
-
-					for (c = 0; c < 2; c++)
-					{
-						putchar(ddig[c]);
-					}
-					putchar(' ');
-					for (c = 2; c < 4; c++)
-					{
-						putchar(ddig[c]);
-					}
-					for (z = 0; z < 2; z++)
-					{
-						putchar(dcomaspace[z]);
-					}
-				}
+			for (z = 0; z < sizeof(dcomaspace) / sizeof(dcomaspace[0]); z++)
+			{
+				putchar(dcomaspace[z]);
+			}
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
 
