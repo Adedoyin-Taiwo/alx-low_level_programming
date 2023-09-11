@@ -8,7 +8,7 @@ int main(void)
 {
 	int digi1, digi2;
 	int dcomaspace[] = {44, 32};
-	int z;
+	unsigned long int z;
 
 	for (digi1 = 0; digi1 <= 99; digi1++)
 	{
