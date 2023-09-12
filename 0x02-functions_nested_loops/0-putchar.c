@@ -2,13 +2,10 @@
 #include "main.h"
 
 /**
-* main - function prints _putchar
-* Return - 0
-*_putchar - writes the character c to stdout
-*@c: The character to print
- */
-
-int _putchar(char c);
+* main - function prints the characters
+* Return: 0
+* _putchar - writes the character to stdout
+*/
 
 int main(void)
 {
