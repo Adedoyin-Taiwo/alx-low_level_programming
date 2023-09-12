@@ -1,11 +1,16 @@
 #include <stdio.h>
+#include "_putchar.h"
 
 /**
 * main - function prints _putchar
 * return - 0
 */
-int main(void)
+
+int _putchar(char c);
+
+int main()
 {
-	printf("_putchar\n");
+	char c;
+	_putchar(c);
 	return (0);
 }
