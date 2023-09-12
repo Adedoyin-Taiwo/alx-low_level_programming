@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-* int _abs - computes the absolute value of an integer.
+* _abs - computes the absolute value of an integer.
 * Return: 0
+* @n: integer
 */
 
 int _abs(int n)
 {
-	int n;
 	if (n < 0)
 	{
 		n *= -1;
@@ -17,8 +17,8 @@ int _abs(int n)
 		n *= 1;
 	}
 	else
-	{	
-		n = n;
+	{
+	n = n;
 	}
 	return (0);
 }
