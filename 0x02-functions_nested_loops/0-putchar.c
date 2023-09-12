@@ -3,14 +3,23 @@
 
 /**
 * main - function prints _putchar
-* return - 0
-*/
+* Return - 0
+*_putchar - writes the character c to stdout
+*@c: The character to print
+ */
 
 int _putchar(char c);
 
-int main()
+int main(void)
 {
-	char c;
-	_putchar(c);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
