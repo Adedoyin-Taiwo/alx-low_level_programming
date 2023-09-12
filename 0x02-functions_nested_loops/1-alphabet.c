@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
-* main - thif function returns the lowercase of alphabets
-* Return: 0
+* print_alphabet - this function returns the lower case of letters
+* Return: does not return any value
 */
-
-int main(void)
+void print_alphabet(void)
 {
 	char ch;
 
@@ -14,5 +13,4 @@ int main(void)
 		_putchar(ch);
 	}
 	_putchar('\n');
-	return (0);
 }
