@@ -9,9 +9,11 @@
  */
 #ifndef PUTCHAR_H
 #define PUTCHAR_H
+int _putchar(char c);
+#endif
+
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
 
-#endif
