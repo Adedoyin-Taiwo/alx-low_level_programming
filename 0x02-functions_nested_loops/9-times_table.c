@@ -18,7 +18,7 @@ void times_table(void)
 		while (j <= 9)
 		{
 			ddig = i * j;
-			if (ddig > 10)
+			if (ddig >= 10)
 			{
 				putchar((ddig / 10) + '0');
 				putchar((ddig % 10) + '0');
