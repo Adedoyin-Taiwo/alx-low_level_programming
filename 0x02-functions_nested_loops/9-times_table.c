@@ -8,7 +8,7 @@
 void times_table(void)
 {
 	int ddig;
-	int i,j;
+	int i, j;
 
 	i = 0;
 
@@ -20,9 +20,9 @@ void times_table(void)
 			ddig = i * j;
 			if (ddig > 10)
 			{
-				putchar((ddig/10)+ '0');
-				putchar((ddig%10)+ '0');
-				if (i < 8 || j < 9)
+				putchar((ddig / 10) + '0');
+				putchar((ddig % 10) + '0');
+				if (j < 9)
 				{
 				putchar(',');
 				putchar(' ');
@@ -31,9 +31,9 @@ void times_table(void)
 			}
 			else
 			{
-				putchar(ddig/10);
-				putchar((ddig%10) + '0');
-				if (i < 8 || j < 9)
+				putchar(ddig / 10);
+				putchar((ddig % 10) + '0');
+				if (j < 9)
 				{
 				putchar(',');
 				putchar(' ');
