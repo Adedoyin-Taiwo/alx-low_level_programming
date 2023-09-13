@@ -1,30 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 
-void print_to_98(int n)
+int main (int n)
 {
 	int d;
 
+	n = -100 ;
 	if ((n - 98) > 0)
 	{
 		do
 		{
-			if (n >= 100)
-			{
-				d = n * 1;
-				_putchar((d / 100) + '0');
-				d %= 100;
-				_putchar((d / 10) + '0');
-				_putchar((d % 10) + '0');
-			}
-			else if (n < 100)
-			{
-				_putchar((n / 10) + '0');
-				_putchar((n % 10) + '0');
-			}
+			printf("%d",n );
 			if (n != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ");
 			}
 			n -= 1;
 		}
@@ -32,46 +20,16 @@ void print_to_98(int n)
 	}
 	else if ((n - 98) <= 0)
 	{
-		do
+		do		
 		{
-		if (n < 0 && n >= -100)
-		{
-			d = n * -1;
-			_putchar('-');
-			_putchar((d/10) + '0');
-			_putchar((d%10) + '0');
+			printf("%d",n );
 			if (n != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ");
 			}
-		}
-		else if (n < -99)
-		{
-			d = n * -1;
-			_putchar('-');
-			_putchar((d / 100) + '0');
-			d %= 100;
-			_putchar((d / 10) + '0');
-			_putchar((d % 10) + '0');
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		else if (n >= 0)
-		{
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
-		n += 1;
+			n += 1;
 		}
 		while (n <= 98);
 	}
-	_putchar('\n');
+	printf("\n");
 }
