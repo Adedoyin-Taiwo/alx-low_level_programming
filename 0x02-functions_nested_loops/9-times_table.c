@@ -20,28 +20,27 @@ void times_table(void)
 			ddig = i * j;
 			if (ddig >= 10)
 			{
-				putchar((ddig / 10) + '0');
-				putchar((ddig % 10) + '0');
+				_putchar((ddig / 10) + '0');
+				_putchar((ddig % 10) + '0');
 				if (j < 9)
 				{
-				putchar(',');
-				putchar(' ');
+					_putchar(',');
+					_putchar(' ');
 				}
 				j++;
 			}
 			else
 			{
-				putchar(ddig / 10);
-				putchar((ddig % 10) + '0');
+				_putchar(ddig / 10);
+				_putchar((ddig % 10) + '0');
 				if (j < 9)
 				{
-				putchar(',');
-				putchar(' ');
+					_putchar(',');
+					_putchar(' ');
 				}
 				j++;
 			}
 		}
-		putchar('\n');
 		i++;
 	}
 }
