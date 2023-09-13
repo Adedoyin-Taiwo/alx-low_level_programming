@@ -34,7 +34,7 @@ void print_to_98(int n)
 	{
 		do
 		{
-		if (n < 0)
+		if (n < 0 && n >= -100)
 		{
 			d = n * -1;
 			_putchar('-');
@@ -46,6 +46,19 @@ void print_to_98(int n)
 				_putchar(' ');
 			}
 		}
+		else if (n < -99)
+		{
+			d = n * -1;
+			_putchar('-');
+			_putchar((d / 100) + '0');
+			d %= 100;
+			_putchar((d / 10) + '0');
+			_putchar((d % 10) + '0');
+			if (n != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		else if (n >= 0)
 		{
 			_putchar((n / 10) + '0');
