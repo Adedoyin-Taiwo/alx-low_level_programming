@@ -11,7 +11,6 @@ void times_table(void)
 	int i, j;
 
 	i = 0;
-	
 	while (i <= 9)
 	{
 		j = 0;
