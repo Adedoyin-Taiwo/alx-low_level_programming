@@ -11,7 +11,7 @@ void times_table(void)
 	int i, j;
 
 	i = 0;
-
+	
 	while (i <= 9)
 	{
 		j = 0;
@@ -20,27 +20,24 @@ void times_table(void)
 			ddig = i * j;
 			if (ddig >= 10)
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar((ddig / 10) + '0');
 				_putchar((ddig % 10) + '0');
-				if (j < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				j++;
 			}
 			else
 			{
-				_putchar(ddig / 10);
-				_putchar((ddig % 10) + '0');
-				if (j < 9)
+				if (j != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
+					_putchar(' ');
 				}
-				j++;
+				_putchar(ddig + '0');
 			}
+			j++;
 		}
+		_putchar('\n');
 		i++;
 	}
 }
