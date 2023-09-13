@@ -1,11 +1,6 @@
 #include <stdio.h>
-#include "main.h"
 
-/**
-* times_table - prints times table
-* Return: 0
-*/
-void times_table(void)
+int main(void)
 {
 	int ddig;
 	int i,j;
