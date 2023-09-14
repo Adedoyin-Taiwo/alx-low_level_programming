@@ -23,20 +23,21 @@ void print_times_table(int n)
 		while (j <= n)
 		{
 			ddig = i * j;
-			if (ddig >= 10 && ddig < 100)
-			{
-				printf(",  %d", ddig);
-			}
-			else if (ddig >= 100)
+			if (ddig >= 100)
 			{
 				printf(", %d", ddig);
+			}
+			else if ((ddig >= 10) && (ddig < 100) )
+			{
+				printf(",  %d", ddig);
 			}
 			else
 			{
 				if (j != 0)
 				{
-				printf(",   %d ", ddig);
+				printf(",   ");
 				}
+				printf("%d", ddig);
 			}
 			j++;
 		}
