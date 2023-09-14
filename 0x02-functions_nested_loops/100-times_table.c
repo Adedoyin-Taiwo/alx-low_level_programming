@@ -27,7 +27,7 @@ void print_times_table(int n)
 			{
 				printf(", %d", ddig);
 			}
-			else if ((ddig >= 10) && (ddig < 100) )
+			else if ((ddig >= 10) && (ddig < 100))
 			{
 				printf(",  %d", ddig);
 			}
