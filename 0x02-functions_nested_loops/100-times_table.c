@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * print_times_table - print times table
@@ -10,7 +11,7 @@ void print_times_table(int n)
 {
 	int ddig;
 	int i, j;
-	
+
 	i = 0;
 	while (i <= n)
 	{
@@ -27,9 +28,9 @@ void print_times_table(int n)
 			{
 				if (j != 0)
 				{
-					printf(",  ");	
+				printf(",  ");
 				}
-				printf("%d", ddig )
+				printf("%d", ddig);
 			}
 			j++;
 			printf("\n");
