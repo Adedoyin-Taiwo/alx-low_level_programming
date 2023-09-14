@@ -3,12 +3,13 @@
 
 /**
 * _isupper - if it is uppercase
-* return: 1(true), 0 (false).
+* Return: 1(true), 0 (false).
+* @c: an integer
 */
 
 int _isupper(int c)
 {
-	if ((c < = 90) && (c >= 65))
+	if ((c <= 90) && (c >= 65))
 	{
 		return (1);
 	}
