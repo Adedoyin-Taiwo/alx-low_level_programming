@@ -33,8 +33,8 @@ void print_times_table(int n)
 				printf("%d", ddig);
 			}
 			j++;
-			printf("\n");
 		}
+		printf("\n");
 		i++;
 	}
 }
