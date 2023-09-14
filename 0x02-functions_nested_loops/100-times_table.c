@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -9,8 +8,13 @@
 
 void print_times_table(int n)
 {
-	int ddig;
-	int i, j;
+	if (n > 15 || n < 0)
+	{
+		break;
+	}
+	else
+	{
+	int ddig, i, j;
 
 	i = 0;
 	while (i <= n)
@@ -19,22 +23,25 @@ void print_times_table(int n)
 		while (j <= n)
 		{
 			ddig = i * j;
-			if (ddig >= 10)
+			if (ddig >= 10 && ddig < 100)
 			{
-				printf(", ");
-				printf("%d", ddig);
+				printf(",  %d", ddig);
+			}
+			else if (ddig >= 100)
+			{
+				printf(", %d", ddig);
 			}
 			else
 			{
 				if (j != 0)
 				{
-				printf(",  ");
+				printf(",   %d ", ddig);
 				}
-				printf("%d", ddig);
 			}
 			j++;
 		}
 		printf("\n");
 		i++;
+	}
 	}
 }
