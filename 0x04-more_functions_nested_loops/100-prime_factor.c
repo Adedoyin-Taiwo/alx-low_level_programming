@@ -10,7 +10,7 @@ int main(void)
 	long int  large_num = 612852475143;
 	long int larg_prime;
 
-	for (larg_prime = 22; larg_prime <= large_num; large_num++)
+	for (larg_prime = 2; larg_prime <= large_num; larg_prime++)
 	{
 		if (large_num % larg_prime == 0)
 		{
