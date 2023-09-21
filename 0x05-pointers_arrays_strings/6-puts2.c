@@ -12,8 +12,10 @@ void puts2(char *str)
 
 	while (str[mov] != '\0')
 	{
-		_putchar(str[mov]);
-		mov += 2;
+		if (mov % 2 == 0)
+		{
+			_putchar(str[mov]);
+		}
 	}
 	_putchar('\n');
 }
