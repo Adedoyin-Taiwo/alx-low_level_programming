@@ -10,12 +10,16 @@
 
 void rev_string(char *s)
 {
-	int mov = strlen(s) - 1;
+	int mov, j, len;
+	char rev[]= {0};
 
-	while (mov >= 0)
+	len = strlen(s);
+	j = 0;
+	
+	for (mov = len - 1; mov >= 0; mov--)
 	{
-		_putchar(s[mov]);
-		--mov;
+		rev[j] = s[mov];
+		j++;
 	}
-	_putchar('\n');
+	rev[j] = '\0'
 }
