@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
 * _strncat - concatenate
@@ -23,15 +24,12 @@ char *_strncat(char *dest, char *src, int n)
 	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
-		if (j <= n)
+		if (j < n)
 		{
 		i++;
 		j++;
 		}
 	}
-	if (strlen(src) > n)
-	{
 	dest[i] = '\0';
-	}
 	return (dest);
 }
