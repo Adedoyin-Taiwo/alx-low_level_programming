@@ -19,18 +19,19 @@ void puts_half(char *str)
 	{
 		if (len_str % 2 == 0)
 		{
-			if (mov > half_s)
+			if (mov >= half_s)
 			{
 				_putchar(str[mov]);
 			}
 		}
 		else if (len_str % 2 != 0)
 		{
-			if (mov > half_s_n)
+			if (mov >= half_s_n)
 			{
 				_putchar(str[mov]);
 			}
 		}
 	mov++;
 	}
+	_putchar('\n');
 }
