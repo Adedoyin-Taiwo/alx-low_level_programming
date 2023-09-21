@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
 * _strcpy - copies the string pointed
@@ -9,7 +10,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	long unsigned int i;
 
 	for (i = 0; i < strlen(src); i++)
 	{
