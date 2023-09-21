@@ -16,6 +16,7 @@ void puts2(char *str)
 		{
 			_putchar(str[mov]);
 		}
+	mov++;
 	}
 	_putchar('\n');
 }
