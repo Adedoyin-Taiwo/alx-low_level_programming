@@ -8,7 +8,7 @@
 
 char *leet(char *str)
 {
-	char arr_char[] = "oOlLeEaAtT"
+	char arr_char[] = "oOlLeEaAtT";
 	char arr_num[] = "0011334477";
 	int i;
 	int j;
