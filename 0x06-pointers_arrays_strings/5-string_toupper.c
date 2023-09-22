@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-* string_toupper
+* string_toupper - converts string to upper
+* @str: the string
 * Return: 0
 */
 
