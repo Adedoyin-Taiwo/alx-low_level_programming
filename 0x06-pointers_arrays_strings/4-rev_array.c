@@ -9,20 +9,17 @@
 
 void reverse_array(int *a, int n)
 {
-	int i = n - 1;
-	char digchar;
+	int i;
+	int first = 0;
+	int last = n - 1;
+	int holder;
 
-	while (i >= 0)
+	while (first < last)
 	{
-		digchar = '0' + a[i];
-		_putchar(digchar);
-		if (i != 0)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	i--;
+		holder = a[first];
+		a[first] = a[last];
+		a[last] = holder;
+		first++;
+		last--;
 	}
-	_putchar('\n');
 }
-
