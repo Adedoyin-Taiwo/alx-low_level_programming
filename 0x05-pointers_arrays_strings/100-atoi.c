@@ -8,7 +8,7 @@
 * Return: 0
 */
 
-int _atoic(char *s)
+int _atoi(char *s)
 {
 	int i;
 	int result = 0;
