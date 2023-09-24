@@ -8,9 +8,8 @@
 * Return: 0
 */
 
-int main(void)
+int _atoic(char *s)
 {
-	char *s = "878";
 	int i;
 	int result = 0;
 
