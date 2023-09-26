@@ -16,8 +16,9 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		lead_sum += a[i * size + i];
-		opp_sum += a[i * size + (size - 1 - i)];
+		lead_sum += *(a + (size * i + 1);
+		opp_sum += *(a + (size * i + size - 1 - i));
 	}
-	printf("%d, %d \n", lead_sum, opp_sum);
+	printf("%d, ", lead_sum);
+	printf("%d\n ", opp_sum);
 }
