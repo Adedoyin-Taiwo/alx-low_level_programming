@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * print_diagsums - prints diagonal sums
@@ -18,5 +19,5 @@ void print_diagsums(int *a, int size)
 		lead_sum += a[i * size + i];
 		opp_sum += a[i * size + (size - 1 - i)];
 	}
-	printf("%d, %d", lead_sum, opp_sum);
+	printf("%d, %d \n", lead_sum, opp_sum);
 }
