@@ -31,5 +31,5 @@ int recursive_prime(int n, int divisor)
 
 int is_prime_number(int n)
 {
-	return (recursive_prime(n, 0));
+	return (recursive_prime(n, 1));
 }
