@@ -12,15 +12,15 @@ int is_prime_number(int n)
 
 	if (n <= 1)
 	{
-		return (false);
+		return (0);
 	}
 	if (divisor * divisor > n)
 	{
-		return (true);
+		return (1);
 	}
 	if (n % divisor == 0)
 	{
-		return (false);
+		return (0);
 	}
-	return (isPrimeRecursive(n, divisor + 1));
+	return (is_prime_number(n, divisor + 1));
 }
