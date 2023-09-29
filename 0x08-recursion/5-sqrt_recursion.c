@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* power calculator - returns the resultant of the exponentiation
-* @x: the integer
-* @y: the power
+* _power_handler -  returns the resultant of the exponentiation
+* @n: the integer
+* @x: the power
 * Return: result of exponentiation
 */
 
@@ -32,5 +32,5 @@ int _power_handler(int n, int x)
 
 int _sqrt_recursion(int n)
 {
-	return _power_handler(n, 0);
+	return (_power_handler(n, 0));
 }
