@@ -1,5 +1,4 @@
 #include "main.h"
-#include <iostream>
 
 /**
 * is_prime_number - tells prime number
