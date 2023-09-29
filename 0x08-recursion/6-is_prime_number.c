@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
-* is_prime_number - tells prime number
+* recursive_prime - tests prime
 * @n: the number
+* @divisor: the tested case
 * Return: 1 (it is prime) ) (No)
 */
 
-int is_prime_number(int n)
+int recursive_prime(int n, int divisor)
 {
-	int divisor = 2;
-
 	if (n <= 1)
 	{
 		return (0);
@@ -22,5 +21,15 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (is_prime_number(n, divisor + 1));
+	return (recursive_prime(n, divisor + 1));
+}
+/**
+* is_prime_number - tells prime number
+* @n: the number
+* Return: 1 (it is prime) ) (No)
+*/
+
+int is_prime_number(int n)
+{
+	return (recursive_prime(n, 0));
 }
