@@ -32,5 +32,5 @@ int string_test(char *s1, char *s2)
 
 int wildcmp(char *s1, char *s2)
 {
-	return (string_test(si, s2));
+	return (string_test(s1, s2));
 }
