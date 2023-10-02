@@ -13,6 +13,10 @@ int string_test(char *s1, char *s2)
 	{
 		return (1);
 	}
+	if (*s2 == '*')
+	{
+		return (string_test(s1, s2 + 1) || (s1 != '\0' && string_test(s1 + 1, s2)));
+	}
 	if (*s1 == *s2)
 	{
 		return (string_test(s1 + 1, s2 + 1));
