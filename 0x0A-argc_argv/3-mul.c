@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
-* main - A program that multiplies two numbers, print the result, then a new line.
+* main - Multiplies two numbers, print the result, then a new line.
 * @argc: # of arguments supplied to the program.
 * @argv: Array of pointers to the arguments.
-* Return: 0 (Program receives two arguments), 1 (does not receive two arguments)
+* Return: 0 (Program receives two arguments), 1(does not receive two arguments)
 */
 
 int main(int argc, char *argv[])
