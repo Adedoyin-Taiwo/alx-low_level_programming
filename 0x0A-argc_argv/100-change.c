@@ -17,9 +17,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	num_cents = atoi(argv[1]);
-
 	while (num_cents > 0)
 	{
 		num_coins++;
