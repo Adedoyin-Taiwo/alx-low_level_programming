@@ -5,7 +5,7 @@
 
 char *hold_mal(unsigned int size, char c, char *d)
 {
-	int i;
+	unsigned int i;
 
 	d = malloc(sizeof(char)*size);
 	if (size == 0)
