@@ -28,4 +28,4 @@ char *create_array(unsigned int size, char c)
 		d[i] = c;
 	}
 	return (d);
-
+}
