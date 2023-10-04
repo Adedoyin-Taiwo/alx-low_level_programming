@@ -20,9 +20,13 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < strlen(str); i++)
+	if (str == NULL)
 	{
-		*(d + i) = *(str + i);
+		return (NULL);
+	}
+	for (i = 0; i <= strlen(str); i++)
+	{
+		d[i] = str[i];
 	}
 	free(d);
 	return (d);
