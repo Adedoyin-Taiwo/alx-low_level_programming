@@ -23,17 +23,19 @@ char *str_concat(char *s1, char *s2)
 	if (m == NULL || n == NULL)
 		return (NULL);
 	i = 0;
-	while (*(m + i) != '\0')
+	while (*(s1 + i) != '\0')
 	{
+		*(m + i) = *(s1 + i);
 		i++;
 	}
 	j = 0;
-	while (*(n + j) != '\0')
+	while (*(s2 + j) != '\0')
 	{
-		*(m + i) = *(n + j);
+		*(m + i) = *(s2 + j);
 		i++;
 		j++;
 	}
-	*(n + j) = '\0';
+	*(m + i) = '\0';
+	free(n);
 	return (m);
 }
