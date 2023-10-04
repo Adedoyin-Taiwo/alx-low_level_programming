@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 
-void mal(char * c)
+char *hold_mal(unsigned int size, char c, char *d)
 {
 	int i;
 
-	c = malloc(sizeof(char)*size);
+	d = malloc(sizeof(char)*size);
 	if (size == 0)
 	{
 		return (NULL);
@@ -15,7 +15,7 @@ void mal(char * c)
 	while (i < size)
 	{
 		c[i] == c;
-		return (mal (c + 1));
+		return (mal(c + 1));
 	}
 	if (c == Null)
 	{
