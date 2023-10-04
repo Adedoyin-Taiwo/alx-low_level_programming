@@ -12,15 +12,15 @@
 
 char *_strdup(char *str)
 {
-	char * d;
-	long unsigned int i;
+	char *d;
+	unsigned long int i;
 
-	d = malloc(strlen(str) + 1);
-	if (d == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	if (str == NULL)
+	d = malloc(strlen(str) + 1);
+	if (d == NULL)
 	{
 		return (NULL);
 	}
@@ -28,6 +28,6 @@ char *_strdup(char *str)
 	{
 		d[i] = str[i];
 	}
-	free(d);
 	return (d);
+	free(d);
 }
