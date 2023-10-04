@@ -17,10 +17,11 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	int i, j;
+	int i;
+	int j;
 	int **grid = (int **)malloc(height * sizeof(int *));
 
-	if (point == NULL)
+	if (grid == NULL)
 	{
 		return (NULL);
 	}
