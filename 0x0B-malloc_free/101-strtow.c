@@ -10,7 +10,7 @@
 */
 char **strtow(char *str)
 {
-	int i, j, k;
+	size_t i, j, k;
 	char **strtow;
 
 	if (str == NULL || str[0] == '\0')
