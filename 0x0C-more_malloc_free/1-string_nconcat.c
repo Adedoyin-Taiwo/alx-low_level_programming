@@ -23,18 +23,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	if (n > strlen(s2))
+		n = strlen(s2);
 	while (*(s1 + i) != '\0')
 	{
 		*(m + i) = *(s1 + i);
 		i++;
 	}
-	while (*(s2 + j) != '\0')
+	while (j < n && *(s2 + j) != '\0')
 	{
 		*(m + i) = *(s2 + j);
-		if (j < n)
-		{
 		i++;
-		}
 		j++;
 	}
 	*(m + i) = '\0';
