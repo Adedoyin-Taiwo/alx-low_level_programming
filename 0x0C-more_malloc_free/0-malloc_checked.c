@@ -2,13 +2,13 @@
 
 /**
 * malloc_checked - function allocates memory using malloc
-* @b: 
-* Return - 0
+* @b:he size of the memorry
+* Return: 0
 */
 
 void *malloc_checked(unsigned int b)
 {
-	int * c;
+	int *c;
 
 	c = malloc(b);
 	if (c == NULL)
