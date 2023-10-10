@@ -17,7 +17,13 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 
 	n = malloc(sizeof(char) * (strlen(name) + 1));
 	o = malloc(sizeof(char) * (strlen(owner) + 1));
-	if (n == NULL)
+	if (n == NULL || o == NULL) 
+	{
+		if (n != NULL) free(n);
+		if (o != NULL) free(o);
+        return;
+	}
+    	if (n == NULL)
 		exit(EXIT_SUCCESS);
 	if (o == NULL)
 		exit(EXIT_SUCCESS);
