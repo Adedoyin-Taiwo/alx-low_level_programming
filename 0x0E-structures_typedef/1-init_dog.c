@@ -18,9 +18,9 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	n = malloc(sizeof(char) * (strlen(name) + 1));
 	o = malloc(sizeof(char) * (strlen(owner) + 1));
 	if (n == NULL)
-		exit;
+		exit(EXIT_SUCCESS);
 	if (o == NULL)
-		exit;
+		exit(EXIT_SUCCESS);
 	strcpy(n, name);
 	strcpy(o, owner);
 
