@@ -23,10 +23,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		if (o != NULL) free(o);
         return;
 	}
-    	if (n == NULL)
-		exit(EXIT_SUCCESS);
-	if (o == NULL)
-		exit(EXIT_SUCCESS);
 	strcpy(n, name);
 	strcpy(o, owner);
 
