@@ -7,3 +7,5 @@
 	float age;\
 	char *owner;\
 }\
+
+#endif
