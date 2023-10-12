@@ -20,26 +20,23 @@ void print_all(const char * const format, ...)
 		switch (*(format + i))
 		{
 			case 'c':	{
-					 char ret;
-
-				printf("%c", ret = va_arg(args, int));	}
+						printf("%c", va_arg(args, int));	}
 				break;
 			case 'i':	{
-				int ret;
-
-				printf("%d", ret = va_arg(args, int));	}
+						printf("%d", va_arg(args, int));	}
 				break;
 			case 'f':	{
-				double ret;
-
-				printf("%f", ret = va_arg(args, double));	}
+						printf("%f", va_arg(args, double));	}
 				break;
 			case 's':	{
-				const char *ret;
+						const char *ret;
 
 				ret = va_arg(args, const char *);
 				if (ret == NULL)
+				{
 					printf("(nil)\n");
+					return;
+				}
 				printf("%s", ret);	}
 				break;
 			default:
