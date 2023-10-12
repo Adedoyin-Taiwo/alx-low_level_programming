@@ -13,6 +13,7 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0, lh = strlen(format);
+	char * hold_str;
 
 	va_start(args, format);
 	while (format && format[i] != '\0')
@@ -29,20 +30,18 @@ void print_all(const char * const format, ...)
 						printf("%f", va_arg(args, double));	}
 				break;
 			case 's':	{
-						const char *ret;
-
-				ret = va_arg(args, const char *);
-				if (ret == NULL)
+				hold_str = va_arg(args, char *);
+				if (!hold_str)
 				{
-					ret = "(nil)";
-				}
-				printf("%s", ret);	}
+					hold_str = "(nil)";
+				}	
+				printf("%s", hold_str);	}
 				break;
 			default:
 				i++;
 				continue;
 		}
-		if (i < lh -1)
+		if (i < lh - 1)
 		printf(", ");
 		i++;
 	}
