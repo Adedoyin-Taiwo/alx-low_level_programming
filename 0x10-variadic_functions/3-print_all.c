@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0, lh = strlen(format);
-	char * hold_str;
+	char *hold_str;
 
 	va_start(args, format);
 	while (format && format[i] != '\0')
@@ -34,7 +34,7 @@ void print_all(const char * const format, ...)
 				if (!hold_str)
 				{
 					hold_str = "(nil)";
-				}	
+				}
 				printf("%s", hold_str);	}
 				break;
 			default:
