@@ -12,10 +12,10 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, length = strlen(format);
+	int i = 0, lh = strlen(format);
 
 	va_start(args, format);
-	while (i < length)
+	while (i < lh)
 	{
 		switch (*(format + i))
 		{
@@ -42,6 +42,8 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
+		if ((i < lh - 1) && (format[i] == 'c' || format[i] == 'i'
+					|| format[i] == 'f' || format[i] == 's'))
 		printf(", ");
 		i++;
 	}
