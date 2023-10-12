@@ -34,8 +34,7 @@ void print_all(const char * const format, ...)
 				ret = va_arg(args, const char *);
 				if (ret == NULL)
 				{
-					printf("(nil)\n");
-					return;
+					ret = "(nil)";
 				}
 				printf("%s", ret);	}
 				break;
@@ -48,4 +47,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
+	va_end(args);
 }
