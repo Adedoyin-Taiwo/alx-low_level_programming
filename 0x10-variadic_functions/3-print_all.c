@@ -39,10 +39,10 @@ void print_all(const char * const format, ...)
 				printf("%s", ret);	}
 				break;
 			default:
-				break;
+				i++;
+				continue;
 		}
-		if ((i < lh - 1) && (format[i] == 'c' || format[i] == 'i'
-					|| format[i] == 'f' || format[i] == 's'))
+		if (i < lh -1)
 		printf(", ");
 		i++;
 	}
