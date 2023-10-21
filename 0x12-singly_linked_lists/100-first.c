@@ -1,11 +1,22 @@
 #include <stdio.h>
 
-void print_intro()
+/**
+* print_intro - prints introduction
+* Return: Nothing
+*/
+
+void print_intro(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n
+			I bore my house upon my back!\n");
 }
 __attribute__((constructor))
-	void call_print_intro()
+/**
+* call_print_intro - calls string
+* Return: Nothing at all
+*/
+
+	void call_print_intro(void)
 {
-    print_intro();
+	print_intro();
 }
