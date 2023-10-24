@@ -4,12 +4,14 @@
 * add_nodeint_end - add node at the end
 * @head: the head of the list
 * @n: the data to be added
+* Return: pointer to newly added node
 */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *temp = malloc(sizeof(listint_t));
 	listint_t *ptr;
+
 	if (temp == NULL)
 	{
 		return (NULL);
