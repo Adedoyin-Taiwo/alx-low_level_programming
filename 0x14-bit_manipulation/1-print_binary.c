@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 
 	if (n == 0)
 	{
-		printf("0");
+		_putchar('0');
 		return;
 	}
 	for (i = sizeof(n) * 8 - 1; i >= 0; i--)
@@ -21,7 +21,7 @@ void print_binary(unsigned long int n)
 		bit = (n >> i) & 1;
 		if (bit || print)
 		{
-			printf("%ld", bit);
+			_putchar(bit + '0');
 			print = 1;
 		}
 	}
