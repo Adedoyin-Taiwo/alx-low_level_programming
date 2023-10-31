@@ -297,6 +297,6 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	print_entry(header->e_entry, header->e_ident);
 
 	free(header);
-	close_elf(fd);
+	close_elf(d_file);
 	return (0);
 }
