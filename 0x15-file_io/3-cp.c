@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int d_file1, d_file2, a, b, c;
+	int d_file1 = open(argv[1], O_RDONLY), d_file2, a, b, c;
 	char d_buffer[MY_BUFFER_SIZE];
 
 	if (argc != 3)
@@ -18,13 +18,13 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	d_file1 = open(argv[1], O_RDONLY);
 	if (d_file1 < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	d_file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+	d_file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR
+			| S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	while ((a = read(d_file1, d_buffer, MY_BUFFER_SIZE)) > 0)
 	{
 		if (d_file2 < 0 || write(d_file2, d_buffer, a) != a)
